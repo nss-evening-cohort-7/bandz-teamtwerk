@@ -33,7 +33,6 @@ nav ul a{
     width: 115px;
     text-decoration: none;
     box-sizing: border-box;
-   
 }
 
 nav ul a li{
@@ -46,17 +45,16 @@ nav ul a li{
     justify-content: space-around;
 }
 
-#nav-pages a:hover{
-    border-left: 8px solid transparent;
-    border-right: 8px solid transparent;
+nav ul a:hover{
     transition: all 1.5s ease;
-    text-decoration-color:purple; 
+    background-color: tomato;
 }
 
 #nav-media-icons{
     display: flex;
     width: 50%;
     justify-content: flex-end;
+    margin-right: 20px;
 }
 
 #nav-media-icons a{
@@ -105,7 +103,9 @@ footer{
 main{
     height: 600px;
     width: 100%;
-    background-color: firebrick;
+    /* background-color: firebrick; */
+    display: flex;
+    justify-content: flex-start;
 }
 
 /*--------------------- Index Layout --------------------- */
@@ -130,8 +130,73 @@ main{
     height: 180px;
 }
 
+#right-col{
+    width: 30%;
+    background-color:red;
+    height: 600px;
+}
 
+/*--------------------- Media Queries --------------------- */
 
+@media (max-width: 800px) {
+    nav{
+        display: flex;
+        border-radius: 4px;
+        padding: 0;
+        background-color: #111;
+        font-family: 'Abel';
+        font-size: 22px;
+        letter-spacing: 1px;
+        font-weight: bold;
+        position: static;
+        flex-direction: column;
+    }
 
+    nav ul a{
+        list-style: none;
+        display: inline;
+    }
+    
+    #nav-pages{
+        justify-content: space-around;
+        display: unset;
+        width: 100%;
+    }
 
+    #nav-pages li:hover{
+        transition: all 1.5s ease;
+        background-color: tomato;
+    }
 
+    #nav-media-icons a{
+        width: 100%;
+    }
+
+    #nav-media-icons{
+        display: flex;
+        width: 100%;
+        justify-content: center;
+    }
+
+    #filler{
+        height: 0px;
+    }
+
+    /*---------------- Index Page ----------------*/
+
+    #right-col{
+        width: 0px;
+    }
+
+    #left-col{
+        width: 100%;
+    }
+
+    iframe{
+        width: 374px;
+    }
+
+    #video-player{
+        margin: 0 auto;
+    }    
+ }

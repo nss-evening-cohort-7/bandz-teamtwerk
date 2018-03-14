@@ -5,6 +5,15 @@
     padding: 0;
 }
 
+html{
+    height: 100%;
+}
+
+body{
+    min-height: 100%;
+    background-color:black;
+}
+
 /*--------------------- Navigation --------------------- */
 
 nav{
@@ -112,7 +121,6 @@ main{
 #left-col{
     width: 70%;
     height: 600px;
-    background-color:black;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -135,6 +143,22 @@ main{
     background-color:red;
     height: 600px;
 }
+
+/*--------------------- Music Layout --------------------- */
+#album-wrapper{
+    display: flex;
+    justify-content:space-evenly;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.album{
+    width: 40%;
+    height: 280px;
+    background-color: red;
+}
+
+
 
 /*--------------------- Media Queries --------------------- */
 

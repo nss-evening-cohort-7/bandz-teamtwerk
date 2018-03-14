@@ -1,44 +1,44 @@
 var tours = [
     {
-        Date: "June 12, 2018",
-        Time: "5:00 pm",
-        Location: "Brooklyn, NY",
-        Venue: "Barclays Center",
+        date: "June 12, 2018",
+        time: "5:00 pm",
+        location: "Brooklyn, NY",
+        venue: "Barclays Center",
 
     },
     {
-        Date: "August 8, 2018",
-        Time: "6:00 pm",
-        Location: "Oakland, CA",
-        Venue: "Oracle Arena",
+        date: "August 8, 2018",
+        time: "6:00 pm",
+        location: "Oakland, CA",
+        venue: "Oracle Arena",
 
     },
     {
-        Date: "October 31, 2018",
-        Time: "7:00 pm",
-        Location: "Houston, TX",
-        Venue: "Toyota Center",
+        date: "October 31, 2018",
+        time: "7:00 pm",
+        location: "Houston, TX",
+        venue: "Toyota Center",
 
     },
     {
-        Date: "January 5, 2018",
-        Time: "7:00 pm",
-        Location: "Macau, China",
-        Venue: "Cotai Arena",
+        date: "January 5, 2018",
+        time: "7:00 pm",
+        location: "Macau, China",
+        venue: "Cotai Arena",
 
     },
     {
-        Date: "March 3, 2018",
-        Time: "5:00 pm",
-        Location: "Berlin, Germany",
-        Venue: "Mercedes-Benz Arena",
+        date: "March 3, 2018",
+        time: "5:00 pm",
+        location: "Berlin, Germany",
+        venue: "Mercedes-Benz Arena",
 
     },
     {
-        Date: "May 23, 2018",
-        Time: "5:00 pm",
-        Location: "Saitama, Japan",
-        Venue: "Saitama Super Arena",
+        date: "May 23, 2018",
+        time: "5:00 pm",
+        location: "Saitama, Japan",
+        venue: "Saitama Super Arena",
 
     },
 ];
@@ -61,7 +61,7 @@ function tourStringBuilder(tourArray){
     element.innerHTML += domString;
   }
   
-  dinoStringBuilder(tours);
+  tourStringBuilder(tours);
 
 
 //https://en.wikipedia.org/wiki/24K_Magic_World_Tour

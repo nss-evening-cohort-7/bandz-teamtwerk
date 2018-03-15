@@ -9,4 +9,5 @@ body {
 
 .btn {
     background-color: rgba(247, 241, 241, 0.845);
+    border-radius: 15px;
 }

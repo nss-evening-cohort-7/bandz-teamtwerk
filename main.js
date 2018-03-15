@@ -47,10 +47,10 @@ function tourStringBuilder(tourArray){
     tourArray.forEach(function(tours){
       var strang = "";
       strang += "<div class='tours'>";
-      strang += "<h2>" + tours.date + "</h2>";
-      strang += "<h2>" + tours.time + "</h2>";
-      strang += "<h2>" + tours.location + "</h2>";
-      strang += "<h2>" + tours.venue + "</h2>";
+      strang += "<h4>" + tours.date + "</h4>";
+      strang += "<h5>" + tours.time + "</h5>";
+      strang += "<h3>" + tours.location + "</h3>";
+      strang += "<h3>" + tours.venue + "</h3>";
       strang += "</div>";
       printToDom(strang, 'tour-holder')
     })

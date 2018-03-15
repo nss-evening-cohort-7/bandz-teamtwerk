@@ -1,25 +1,22 @@
-var twitter = ["Rick James", "@rick_james", "pimping aint easy it's just real","03:17 - 14 sep 2017"];
-var twitter2 = ["Beyonce Knowles", "@beyonce", "pimping aint easy it's just real","03:17 - 14 sep 2017"];
-var twitter3 = ["Macaulay Culkin", "@IncredibleCulk", "pimping aint easy it's just real","03:17 - 14 sep 2017"];
-
-console.log(twitter);
-console.log(twitter2);
-console.log(twitter3);
-
+var twitter =[
+  {name:"Rick James", handle:"@rick_james",tweet: "pimping aint easy it's just real",timestamp:"03:17 - 14 sep 2017"},
+  {name:"Beyonce Knowles", handle:"@beyonce", tweet:"pimping aint easy it's just real",timestamp:"03:17 - 14 sep 2017"},
+  {name:"Macaulay Culkin", handle:"@IncredibleCulk", tweet:"pimping aint easy it's just real",timestamp:"03:17 - 14 sep 2017"}
+];
 function twittercardbuilder(twitter){
-    twitter.forEach(function(twitter){
-      var string = "";
-      string += "<div class=''>";
-      string += "<h1>" + twitter + "</h1>";
-      string += "</div>";
-      printToDom(string, 'cards')
-    })
-  }
-
+  var twittercard="";
+for (var i = 0; i < twitter.length; i++) {
+   twittercard += "<div class='card'>";
+   twittercard +="<h1>" + twitter[i].name + "</h1>";
+   twittercard +="<h2>" + twitter[i].handle + "</h2>";
+   twittercard +="<p>" + twitter[i].tweet + "</p>";
+   twittercard +="<p>" + twitter[i].timestamp + "</p>";
+   twittercard += "</div>";
+}
+printToDom(twittercard, "main");
+};
 function printToDom(string, divID){
    var myDiv = document.getElementById(divID);
-   console.log("myDiv:", myDiv);
-   myDiv.innerHTML += string;
-}
-
+   myDiv.innerHTML = string;
+};
 twittercardbuilder(twitter);

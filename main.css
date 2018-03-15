@@ -88,6 +88,10 @@ footer{
     background-color: #111;
     color: #cfcfcf;
     text-align: center;
+    position:absolute;
+    bottom: auto;
+    width:100%;
+    height:16px;   /* Height of the footer */
 }
 
 /*--------------------- Base Layout --------------------- */
@@ -226,7 +230,7 @@ main{
     }    
  }
 
- @media(min-height:1424px){
+  @media(min-height:1424px){ 
     footer{
         background-color: #111;
         color: #cfcfcf;
@@ -235,4 +239,4 @@ main{
         width: 100%;
         bottom: 0;
     }
- }
+ } 

@@ -1,3 +1,9 @@
+function redirect()
+    {
+    var url = "https://www.ticketmaster.com/";
+    window.location.href= url;
+    }
+
 var tours = [
     {
         date: "June 12, 2018",

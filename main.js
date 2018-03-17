@@ -5,7 +5,7 @@ var twitter =[
 ];
 function printToDom(string, divID){
     var myDiv = document.getElementById(divID);
-    if( myDiv = null){
+    if( myDiv != null){
    myDiv.innerHTML = string;}
 };
 function twittercardbuilder(twitter){

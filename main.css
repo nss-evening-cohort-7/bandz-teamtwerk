@@ -132,13 +132,10 @@ main{
     width: 100%;
     display: flex;
     justify-content: space-around;
+    background-color: #E1E8ED;
 }
 
-.tcard{
-    width: 40%;
-    background-color: green;
-    height: 180px;
-}
+
 
 #right-col{
     width: 30%;
@@ -228,3 +225,20 @@ main{
         margin: 0 auto;
     }    
  }
+ /*---------------- Twitter ----------------*/
+
+#twitter-card{
+    background-color: #E1E8ED;
+        
+ }
+
+ .tcard{
+    width: 300px;
+    border-color: #1DA1F2;
+    background-color: white;
+    height: 180px;
+    margin: 15%;
+    border-style: solid;
+    border-width: medium;
+    border-radius: 5px;
+}

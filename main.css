@@ -3,11 +3,19 @@ body {
 }
 
 .tour {
-    display: inline-block;
+    padding: 20px;
     color: white;
 }
 
 .btn {
     background-color: rgba(247, 241, 241, 0.845);
     border-radius: 15px;
+}
+
+.tourTime {
+    font-size: 14px;
+}
+
+.tourDate {
+    font-size: 18px; 
 }

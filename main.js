@@ -6,7 +6,7 @@ function redirect()
 
 var tours = [
     {
-        image: "image1.jpg",
+        image: "img/BarclaysCenter.jpg",
         date: "June 12, 2018",
         time: "5:00 pm",
         location: "Brooklyn, NY",
@@ -14,6 +14,7 @@ var tours = [
 
     },
     {
+        image: "img/OracleArena.jpg",
         date: "August 8, 2018",
         time: "6:00 pm",
         location: "Oakland, CA",
@@ -21,6 +22,7 @@ var tours = [
 
     },
     {
+        image: "img/ToyotaCenter.jpg",
         date: "October 31, 2018",
         time: "7:00 pm",
         location: "Houston, TX",
@@ -28,6 +30,7 @@ var tours = [
 
     },
     {
+        image: "img/CotaiArena.jpg",
         date: "January 5, 2018",
         time: "7:00 pm",
         location: "Macau, China",
@@ -35,6 +38,7 @@ var tours = [
 
     },
     {
+        image: "img/MercedesArena.jpeg",
         date: "March 3, 2018",
         time: "5:00 pm",
         location: "Berlin, Germany",
@@ -42,6 +46,7 @@ var tours = [
 
     },
     {
+        image: "img/SaitamaSuperArena.jpg",
         date: "May 23, 2018",
         time: "5:00 pm",
         location: "Saitama, Japan",

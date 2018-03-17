@@ -3,6 +3,11 @@ var twitter =[
   {name:"Beyonce Knowles", handle:"@beyonce", tweet:"pimping aint easy it's just real",timestamp:"03:17 - 14 sep 2017", logo:"img/Twitter_Logo_Blue.png"},
   {name:"Macaulay Culkin", handle:"@IncredibleCulk", tweet:"pimping aint easy it's just real",timestamp:"03:17 - 14 sep 2017", logo:"img/Twitter_Logo_Blue.png"}
 ];
+function printToDom(string, divID){
+    var myDiv = document.getElementById(divID);
+    if( myDiv = null){
+   myDiv.innerHTML = string;}
+};
 function twittercardbuilder(twitter){
   var twittercard="";
 for (var i = 0; i < twitter.length; i++) {
@@ -16,10 +21,7 @@ for (var i = 0; i < twitter.length; i++) {
 }
 printToDom(twittercard, "tcard");
 };
-function printToDom(string, divID){
-   var myDiv = document.getElementById(divID);
-   myDiv.innerHTML = string;
-};
+
 twittercardbuilder(twitter);
 var members = [
     { 

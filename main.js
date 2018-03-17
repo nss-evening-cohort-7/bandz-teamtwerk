@@ -6,6 +6,7 @@ function redirect()
 
 var tours = [
     {
+        image: "image1.jpg",
         date: "June 12, 2018",
         time: "5:00 pm",
         location: "Brooklyn, NY",
@@ -52,11 +53,13 @@ var tours = [
 function tourStringBuilder(tourArray){
     tourArray.forEach(function(tours){
       var strang = "";
-      strang += "<div class='tours'>";
-      strang += "<h4>" + tours.date + "</h4>";
-      strang += "<h5>" + tours.time + "</h5>";
-      strang += "<h3>" + tours.location + "</h3>";
-      strang += "<h3>" + tours.venue + "</h3>";
+      strang += "<img class='tourImage' src='"+tours.image+"'>";
+      strang += "<div class='tour'>";
+      strang += "<div> <span class='tourDate'>" 
+      + tours.date + " </span><span class='tourTime'> " 
+      + " @ " + tours.time +"</span></div>";
+      strang += "<div>" + tours.location + "</div>";
+      strang += "<div>" + tours.venue + "</div>";
       strang += "</div>";
       printToDom(strang, 'tour-holder')
     })

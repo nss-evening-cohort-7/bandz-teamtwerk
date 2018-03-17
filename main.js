@@ -1,3 +1,112 @@
+function redirect()
+    {
+    var url = "https://www.ticketmaster.com/";
+    window.location.href= url;
+    }
+
+var tours = [
+    {
+        image: "img/BarclaysCenter.jpg",
+        date: "June 12, 2018",
+        time: "5:00 pm",
+        location: "Brooklyn, NY",
+        venue: "Barclays Center",
+
+    },
+    {
+        image: "img/OracleArena.jpg",
+        date: "August 8, 2018",
+        time: "6:00 pm",
+        location: "Oakland, CA",
+        venue: "Oracle Arena",
+
+    },
+    {
+        image: "img/ToyotaCenter.jpg",
+        date: "October 31, 2018",
+        time: "7:00 pm",
+        location: "Houston, TX",
+        venue: "Toyota Center",
+
+    },
+    {
+        image: "img/CotaiArena.jpg",
+        date: "January 5, 2018",
+        time: "7:00 pm",
+        location: "Macau, China",
+        venue: "Cotai Arena",
+
+    },
+    {
+        image: "img/MercedesArena.jpeg",
+        date: "March 3, 2018",
+        time: "5:00 pm",
+        location: "Berlin, Germany",
+        venue: "Mercedes-Benz Arena",
+
+    },
+    {
+        image: "img/SaitamaSuperArena.jpg",
+        date: "May 23, 2018",
+        time: "5:00 pm",
+        location: "Saitama, Japan",
+        venue: "Saitama Super Arena",
+
+    }
+];
+
+    function printToDom(domString,id){
+        if(document.getElementById(id) !== null){
+            document.getElementById(id).innerHTML = domString; 
+        }    
+    }
+
+  function tourStringBuilder(tourArray){
+    var strang = "";
+    for(var i = 0; i < tourArray.length; i++)
+    {
+      strang += "<img class='tourImage' src='"+ tourArray[i].image +"'>";
+      strang += "<div class='tour'>";
+      strang += "<div> <span class='tourDate'>" 
+      + tourArray[i].date + " </span><span class='tourTime'> " 
+      + " @ " + tourArray[i].time +"</span></div>";
+      strang += "<div>" + tourArray[i].location + "</div>";
+      strang += "<div>" + tourArray[i].venue + "</div>";
+      strang += "</div>";
+    }
+    printToDom(strang, 'tour-holder');
+  }
+   
+  tourStringBuilder(tours);
+
+  var twitter =[
+    {name:"Rick James", handle:"@rick_james",tweet: "pimping aint easy it's just real",timestamp:"03:17 - 14 sep 2017"},
+    {name:"Beyonce Knowles", handle:"@beyonce", tweet:"pimping aint easy it's just real",timestamp:"03:17 - 14 sep 2017"},
+    {name:"Macaulay Culkin", handle:"@IncredibleCulk", tweet:"pimping aint easy it's just real",timestamp:"03:17 - 14 sep 2017"}
+  ];
+  function twittercardbuilder(twitter){
+  var twittercard="";
+    for (var i = 0; i < twitter.length; i++) {
+        twittercard += "<div class='card'>";
+        twittercard +="<h1>" + twitter[i].name + "</h1>";
+        twittercard +="<h2>" + twitter[i].handle + "</h2>";
+        twittercard +="<p>" + twitter[i].tweet + "</p>";
+        twittercard +="<p>" + twitter[i].timestamp + "</p>";
+        twittercard += "</div>";
+    }
+   printToDom(twittercard, "tcard");
+   
+};
+function printToDom(string, divID){
+   var myDiv = document.getElementById(divID);
+   if ( myDiv != null){
+    myDiv.innerHTML = string;
+   }
+  
+};
+twittercardbuilder(twitter);
+
+
 var members = [
     { 
         name: "Brian Wright",
@@ -25,9 +134,7 @@ var members = [
     }    
 ];
 
-function printToDom(string,id){
-    document.getElementById(id).innerHTML = string;
-}
+
 
 function dismember(members){
     var who = '';
@@ -43,6 +150,7 @@ function dismember(members){
         result += "<div><h2 class='heads'>" + who + ": " + "'" + aka + "'" + "</h2>" + "<p class='para'><img class='members-pic' src='" + image + "'>" + about + "</p></div>";
         
     }
+    console.log(result);
     printToDom(result,"bio");
 }
 dismember(members);

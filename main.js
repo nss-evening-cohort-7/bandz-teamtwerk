@@ -79,7 +79,6 @@ var tours = [
    
   tourStringBuilder(tours);
 
-  var members = [
   var twitter =[
     {name:"Rick James", handle:"@rick_james",tweet: "pimping aint easy it's just real",timestamp:"03:17 - 14 sep 2017"},
     {name:"Beyonce Knowles", handle:"@beyonce", tweet:"pimping aint easy it's just real",timestamp:"03:17 - 14 sep 2017"},

@@ -124,7 +124,11 @@ var members = [
     }    
 ];
 
-
+function printToDom(string,id){
+    if(document.getElementById(id) !== null){
+        document.getElementById(id).innerHTML = string;
+    }
+}
 
 function dismember(members){
     var who = '';
@@ -142,3 +146,61 @@ function dismember(members){
     printToDom(result,"bio");
 }
 dismember(members);
+
+var albums = [
+    {
+        name: 'Booty Clans',
+        'release date': '2007',
+        'cover img': './img/album1.jpeg',
+        'total songs': '5',
+        songs:['Ninja Glutes','Fun Buns And Bread Crumbs','Slap Fast, Beat Ass','Curves Preserves','Cheeks And Freaks']
+    },
+    {
+        name: 'No-Handed Clap',
+        'release date': '2008',
+        'cover img': './img/album2.jpeg',
+        'total songs': '4',
+        songs:['Cheek Clap Slap','Crack Gap Slap','Butt Smack Snack','Booty Freaking And Creaking']
+    },
+    {
+        name: 'High-Rise Thighs',
+        'release date': '2009',
+        'cover img': './img/album3.jpeg',
+        'total songs': '4',
+        songs:['Cheeks And Freaks','Butt Smack Snack','Ninja Glutes','Booty Freaking And Creaking']
+    },
+    {
+        name: "Must Be Jelly, Jam Don't Shake Like That",
+        'release date': '2010',
+        'cover img': './img/album4.jpeg',
+        'total songs': '24',
+        songs:['Fun Buns And Bread Crumbs','Cheek Clap Slap','Butt Smack Snack','Surprise Thighs And Cherry Pies']
+    }
+];
+
+function displayAlbums(albums){
+    var result = '';
+    for(var i = 0; i < albums.length; i++){
+        result += '<div class="flip">';
+        result +=   '<div class="front">';
+        result +=       '<div class="album">';
+        result +=           '<img src="' + albums[i]['cover img'] + '">';
+        result +=       '</div>';
+        result +=   '</div>';
+        result +=   '<div class="back">';
+        result +=       '<div class="album">';
+        result +=           '<h2>' + albums[i].name + '</h2>';
+        result +=           '<ul>';
+        for(var j = 0; j < albums[i].songs.length; j++){
+            result += '<li>' + albums[i].songs[j] + '</li>';
+        }                  
+        result +=           '</ul>'
+        result +=       '</div>'
+        result +=   '</div>'
+        result += '</div>';
+    }
+    printToDom(result,"album-wrapper");
+}
+
+displayAlbums(albums);
+

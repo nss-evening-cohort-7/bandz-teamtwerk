@@ -43,16 +43,6 @@ function dismember(members){
 }
 dismember(members);
 
-{/* <div class="album">
-<h2>album_name:</h2>
-<ul>
-    <li>1.song1</li>
-    <li>2.song2</li>
-    <li>3.song3</li>
-</ul>
-</div> */}
-
-
 var albums = [
     {
         name: 'Booty Clans',

@@ -171,8 +171,9 @@ main{
 
 .btn {
     background-color: rgba(247, 241, 241, 0.845);
-    border-radius: 15px;
-    padding: 16px;
+    border-radius: 10px;
+    padding: 5px;
+    margin: 5px;
 }
 
 .tourTime {
@@ -186,6 +187,8 @@ main{
 .tourImage {
     display: block;
     margin: auto;
+    height: 300px;
+    width: 500px;
 }
 
 /*--------------------- Media Queries --------------------- */

@@ -1,3 +1,4 @@
+
 /*--------------------- Generic --------------------- */
 *{
     /* border: 1px solid black; */
@@ -212,10 +213,33 @@ main{
     text-align: center;
 }
 
+/*--------------------- Tour Layout --------------------- */
 
-/*--------------------- Album Flipping --------------------- */
+.tour {
+    padding: 20px;
+    color: white;
+    text-align: center;
+}
 
 
+.btn {
+    background-color: rgba(247, 241, 241, 0.845);
+    border-radius: 15px;
+    padding: 16px;
+}
+
+.tourTime {
+    font-size: 16px;
+}
+
+.tourDate {
+    font-size: 20px; 
+}
+
+.tourImage {
+    display: block;
+    margin: auto;
+}
 
 /*--------------------- Media Queries --------------------- */
 
@@ -279,6 +303,6 @@ main{
 
     #video-player{
         margin: 0 auto;
-    }  
+    }    
  }
 

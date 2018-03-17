@@ -70,8 +70,9 @@ var tours = [
       strang += "<div> <span class='tourDate'>" 
       + tourArray[i].date + " </span><span class='tourTime'> " 
       + " @ " + tourArray[i].time +"</span></div>";
-      strang += "<div>" + tourArray[i].location + "</div>";
-      strang += "<div>" + tourArray[i].venue + "</div>";
+      strang += "<h2>" + tourArray[i].location + "</h2>";
+      strang += "<h3>" + tourArray[i].venue + "</h3>";
+      strang += "<input type='button' class='btn' value='Buy Tickets' onClick='redirect()'>",
       strang += "</div>";
     }
     printToDom(strang, 'tour-holder');

@@ -55,24 +55,8 @@ var tours = [
     }
 ];
 
-// function tourStringBuilder(tourArray){
-//     tourArray.forEach(function(tours){
-//       var strang = "";
-//       strang += "<img class='tourImage' src='"+tours.image+"'>";
-//       strang += "<div class='tour'>";
-//       strang += "<div> <span class='tourDate'>" 
-//       + tours.date + " </span><span class='tourTime'> " 
-//       + " @ " + tours.time +"</span></div>";
-//       strang += "<div>" + tours.location + "</div>";
-//       strang += "<div>" + tours.venue + "</div>";
-//       strang += "</div>";
-//       printToDom(strang, 'tour-holder')
-//     })
-//   }
-
     function printToDom(domString,id){
         if(document.getElementById(id) !== null){
-        // console.log(document.getElementById(id));
             document.getElementById(id).innerHTML = domString; 
         }    
     }
@@ -92,17 +76,33 @@ var tours = [
     }
     printToDom(strang, 'tour-holder');
   }
-  
-//   function printToDom(domString, divId){
-//     var element = document.getElementById(divId);
-//     element.innerHTML += domString;
-//   }
-
-
-  
+   
   tourStringBuilder(tours);
 
   var members = [
+  var twitter =[
+    {name:"Rick James", handle:"@rick_james",tweet: "pimping aint easy it's just real",timestamp:"03:17 - 14 sep 2017"},
+    {name:"Beyonce Knowles", handle:"@beyonce", tweet:"pimping aint easy it's just real",timestamp:"03:17 - 14 sep 2017"},
+    {name:"Macaulay Culkin", handle:"@IncredibleCulk", tweet:"pimping aint easy it's just real",timestamp:"03:17 - 14 sep 2017"}
+  ];
+  function twittercardbuilder(twitter){
+  var twittercard="";
+    for (var i = 0; i < twitter.length; i++) {
+        twittercard += "<div class='card'>";
+        twittercard +="<h1>" + twitter[i].name + "</h1>";
+        twittercard +="<h2>" + twitter[i].handle + "</h2>";
+        twittercard +="<p>" + twitter[i].tweet + "</p>";
+        twittercard +="<p>" + twitter[i].timestamp + "</p>";
+        twittercard += "</div>";
+    }
+   printToDom(twittercard, "tcard");
+};
+function printToDom(string, divID){
+   var myDiv = document.getElementById(divID);
+   myDiv.innerHTML = string;
+};
+twittercardbuilder(twitter);
+var members = [
     { 
         name: "Brian Wright",
         nickname: "Babe-Slayer",
@@ -142,5 +142,4 @@ function dismember(members){
     console.log(result);
     printToDom(result,"bio");
 }
-
 dismember(members);

@@ -1,7 +1,7 @@
 var twitter =[
-  {name:"Rick James", handle:"@rick_james",tweet: "pimping aint easy it's just real",timestamp:"03:17 - 14 sep 2017", pic:""},
-  {name:"Beyonce Knowles", handle:"@beyonce", tweet:"pimping aint easy it's just real",timestamp:"03:17 - 14 sep 2017", pic:""},
-  {name:"Macaulay Culkin", handle:"@IncredibleCulk", tweet:"pimping aint easy it's just real",timestamp:"03:17 - 14 sep 2017", pic:""}
+  {name:"Barack Obama", handle:"@barack_obama",tweet: "pimping aint easy it's just real",timestamp:"03:17 - 14 sep 2017", pic:"<img src='/img/rickjames.jpg' class='profile'>",likes:"<img src='/img/likes1.png' class='likes'>"},
+  {name:"Beyonce Knowles", handle:"@beyonce", tweet:"pimping aint easy it's just real",timestamp:"03:17 - 14 sep 2017", pic:"<img src='/img/beyonce.jpg' class='profile'>",likes:"<img src='/img/likes2.png' class='likes'>"},
+  {name:"Macaulay Culkin", handle:"@IncredibleCulk", tweet:"pimping aint easy it's just real",timestamp:"03:17 - 14 sep 2017", pic:"<img src='/img/macaulayculkin.jpeg' class='profile'>",likes:"<img src='/img/likes3.png' class='likes'>"}
 ];
 function printToDom(string, divID){
     var myDiv = document.getElementById(divID);
@@ -12,26 +12,12 @@ function printToDom(string, divID){
 function twittercardbuilder(twitter){
   var tweetarray=[];
 for (var i = 0; i < twitter.length; i++) {
-  tweetarray.push("<div class='card'>" + "<div id='tlogo'>" + "<img src='/img/twitter-logo-7249D46199-seeklogo.com.png'>" + "</div>" +
-  "<h1>" + twitter[i].name + "</h1>" + "<h2>" + twitter[i].handle + "</h2>" + "<p>" + twitter[i].tweet + "</p>" +"<p>" + twitter[i].timestamp + "</p>" + "</div>");
-  //  console.log(tweetarray);
+  tweetarray.push("<div class='tweet'>" + "<div class='tlogo line'>" + "</div>" + "<div class='line'>" + twitter[i].pic+ "</div>" +"<h1 class='text line name'>" + twitter[i].name + "</h1>" +"<img src='/img/twitter-logo-7249D46199-seeklogo.com.png' class='line'>" +"<br>"+ "<h2 class='text two'>" + twitter[i].handle + "</h2>" +"<br>"+ "<pclass='text'>" + twitter[i].tweet + "</p>" +"<pclass='text'>" + twitter[i].timestamp + "</p>" + twitter[i].likes +"</div>");
+  console.log(tweetarray);
 }
-// printToDom(tweetarray, "tcard");
-tweetarray.forEach(function(tweetarray){
-  setTimeout(function() {
-    alert(tweetarray);
-  }, 3000);
-})
+printToDom(tweetarray, "tcard");
 };
-
-
 twittercardbuilder(twitter);
-
-
-
-
-
-
 var members = [
     { 
         name: "Brian Wright",

@@ -12,7 +12,7 @@ html{
 
 body{
     height: 100%;
-    background-color:white;
+    background-color:black;
 }
 
 /*--------------------- Navigation --------------------- */
@@ -221,29 +221,41 @@ main{
     }    
  }
  /*---------------- Twitter ----------------*/
-
-#twitter-card{
-    /* background-color: #E1E8ED; */
-        
- }
-
- #tcard{
-    width: 80%;
-    border-color: #1DA1F2;
-    background-color: white;
-    height: 80%;
-    margin: 15%;
-    border-style: solid;
-    border-width: medium;
-    border-radius: 5px;
-    font-family: "Helvetica Neue";
-}
 #twitter-card{
     width: 100%;
     display: flex;
     justify-content: space-around;
 }
 #tlogo{
-    height: 50px;
-    width: 50px;
+    position: absolute;
+    top: 10px;
+    right: 0;
+}
+.tweet{
+    width: 370px;
+    border-color: #1DA1F2;
+    background-color: white;
+    height: 180px;
+    margin: 15%;
+    border-style: solid;
+    border-width: medium;
+    border-radius: 5px;
+    font-family: "Helvetica Neue";
+    padding: 12px;
+}
+.text{
+    padding: 3px;
+}
+.line{
+    display: inline;
+}
+.profile{
+    border-radius:50%; 
+}
+.two{
+    font-weight: bold;
+}
+.name{
+    padding-right: 7px;
+    padding-left: 7px;
 }

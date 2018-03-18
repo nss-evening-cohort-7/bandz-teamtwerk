@@ -269,6 +269,11 @@ main{
     width: 500px;
 }
 
+.tours {
+    color: white;
+    text-align: center;
+}
+
 /*--------------------- Media Queries --------------------- */
 
 @media (max-width: 800px) {

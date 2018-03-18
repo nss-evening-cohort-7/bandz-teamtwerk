@@ -213,13 +213,38 @@ main{
     text-align: center;
 }
 
-/*--------------------- Tour Layout --------------------- */
+/*--------------------- Members Layout ---------------------*/
 
-.tour {
-    padding: 20px;
+#bio {
     color: white;
-    text-align: center;
+    margin-top: 50px;
 }
+
+.heads {
+    margin-bottom: 15px;
+    margin-left: 120px;
+    
+}
+
+.para {
+    margin-bottom: 20px;
+    margin-left: 120px;
+    width: 80%;
+    height: 310px;
+    padding-bottom: 5px;
+    padding-top: 10px;
+    border-bottom: 2px solid white;
+}
+
+.members-pic {
+    width:200px;
+    height: 280px;
+    float: left;
+    border-radius: 16%;
+    padding: 5px;
+}
+
+/*--------------------- Tours Layout --------------------- */
 
 
 .btn {

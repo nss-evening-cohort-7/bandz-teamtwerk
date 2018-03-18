@@ -238,17 +238,12 @@ main{
     border-radius: 5px;
     font-family: "Helvetica Neue";
 }
-.fa {
-    padding: 20px;
-    font-size: 30px;
-    width: 30px;
-    text-align: center;
-    text-decoration: none;
-    border-radius: 50%;
-    float: right;
-}
 #twitter-card{
     width: 100%;
     display: flex;
     justify-content: space-around;
+}
+#tlogo{
+    height: 50px;
+    width: 50px;
 }

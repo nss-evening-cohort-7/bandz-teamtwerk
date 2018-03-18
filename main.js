@@ -155,7 +155,6 @@ function dismember(members){
         result += "<div><h2 class='heads'>" + who + ": " + "'" + aka + "'" + "</h2>" + "<p class='para'><img class='members-pic' src='" + image + "'>" + about + "</p></div>";
         
     }
-    console.log(result);
     printToDom(result,"bio");
 }
 dismember(members);

@@ -1,7 +1,6 @@
 
 /*--------------------- Generic --------------------- */
 *{
-    /* border: 1px solid black; */
     margin: 0;
     padding: 0;
 }
@@ -114,7 +113,6 @@ footer{
 }
 
 main{
-    /* height: 600px; */
     width: 100%;
     min-height: 100%;
     display: flex;
@@ -129,6 +127,7 @@ main{
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+    margin-bottom: 30px;
 }
 
 #twitter-card{
@@ -146,7 +145,6 @@ main{
 #right-col{
     width: 30%;
     background-color:red;
-    /* height: 600px; */
     min-height: 100%;
 }
 

@@ -1,3 +1,4 @@
+
 /*--------------------- Generic --------------------- */
 *{
     /* border: 1px solid black; */
@@ -12,7 +13,7 @@ html{
 
 body{
     height: 100%;
-    background-color:black;
+    background-color:black; 
 }
 
 /*--------------------- Navigation --------------------- */
@@ -28,6 +29,7 @@ nav{
     font-weight: bold;
     width: 100%;
     position: fixed;
+    z-index: 1000;
 }
 
 nav ul{
@@ -141,20 +143,120 @@ main{
 /*--------------------- Music Layout --------------------- */
 #album-wrapper{
     display: flex;
-    justify-content:space-evenly;
-    width: 100%;
+    justify-content: space-evenly;
     flex-wrap: wrap;
 }
 
-.album{
-    width: 40%;
+.flip{
+    width: 300px;
+    height: 200px;
+    border: 2px black solid;
+}
+
+.flip > .front{
+    position: absolute;
+    transform: perspective(1000px) rotateY(0deg);
+    background: #fc0;
+    width: 300px;
+    height: 200px;
+    border-radius: 7px;
+    backface-visibility: hidden;
+    transition: transform 0.5s linear 0s;
+}
+
+.flip > .back{
+    position: absolute;
+    transform: perspective(1000px) rotateY(180deg);
+    width: 300px;
+    height: 200px;
+    border-radius: 7px;
+    backface-visibility: hidden;
+    transition: transform 0.5s linear 0s;
+}
+
+.flip:hover > .front{
+    transform: perspective(1000px) rotateY(-180deg);
+
+}
+
+.flip:hover > .back{
+    transform: perspective(1000px) rotateY(0deg);
+    color:  #cfcfcf;
+}
+
+.album img{
+    width: 300px;
+    height: 200px;
+}
+
+.album ul{
+    text-align: center;
+}
+
+.album ul li{
+    border: solid 2px black;
+    list-style: none;
+    display: inline-block;
+    width: 80%;
+}
+
+.album h2{
+    border-bottom: #cfcfcf solid 2px;
+    text-align: center;
+}
+
+/*--------------------- Members Layout ---------------------*/
+
+#bio {
+    color: white;
+    margin-top: 50px;
+}
+
+.heads {
+    margin-bottom: 15px;
+    margin-left: 120px;
+    
+}
+
+.para {
+    margin-bottom: 20px;
+    margin-left: 120px;
+    width: 80%;
+    height: 310px;
+    padding-bottom: 5px;
+    padding-top: 10px;
+    border-bottom: 2px solid white;
+}
+
+.members-pic {
+    width:200px;
     height: 280px;
-    background-color: red;
+    float: left;
+    border-radius: 16%;
+    padding: 5px;
 }
 
 /*--------------------- Album Flipping --------------------- */
 
 
+.btn {
+    background-color: rgba(247, 241, 241, 0.845);
+    border-radius: 15px;
+    padding: 16px;
+}
+
+.tourTime {
+    font-size: 16px;
+}
+
+.tourDate {
+    font-size: 20px; 
+}
+
+.tourImage {
+    display: block;
+    margin: auto;
+}
 
 /*--------------------- Media Queries --------------------- */
 

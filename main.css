@@ -242,6 +242,14 @@ main{
     padding: 5px;
 }
 
+footer {
+  margin-top: 980px;
+  /* negative value of footer height */
+  height: 10px;
+  background-color: black;
+}
+
+/*--------------------- Album Flipping --------------------- */
 /*--------------------- Tours Layout --------------------- */
 
 

@@ -131,9 +131,6 @@ main{
 }
 
 
-
-
-
 #right-col{
     width: 30%;
     background-color:red;
@@ -242,14 +239,7 @@ main{
     padding: 5px;
 }
 
-footer {
-  margin-top: 980px;
-  /* negative value of footer height */
-  height: 10px;
-  background-color: black;
-}
 
-/*--------------------- Album Flipping --------------------- */
 /*--------------------- Tours Layout --------------------- */
 
 

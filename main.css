@@ -1,7 +1,6 @@
 
 /*--------------------- Generic --------------------- */
 *{
-    /* border: 1px solid black; */
     margin: 0;
     padding: 0;
 }
@@ -114,7 +113,6 @@ footer{
 }
 
 main{
-    height: 600px;
     width: 100%;
     min-height: 100%;
     display: flex;
@@ -124,10 +122,12 @@ main{
 /*--------------------- Index Layout --------------------- */
 #left-col{
     width: 70%;
-    height: 600px;
+    /* height: 600px; */
+    min-height: 100%;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+    margin-bottom: 30px;
 }
 
 
@@ -137,7 +137,12 @@ main{
 #right-col{
     width: 30%;
     background-color:red;
-    height: 600px;
+    min-height: 100%;
+}
+
+#right-col{
+    background-image: url('./img/twerkers.png');
+    background-size: 100% 100vh;
 }
 
 /*--------------------- Music Layout --------------------- */
@@ -151,6 +156,7 @@ main{
     width: 300px;
     height: 200px;
     border: 2px black solid;
+    margin-top: 20px;
 }
 
 .flip > .front{

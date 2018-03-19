@@ -130,17 +130,9 @@ main{
     flex-wrap: wrap;
 }
 
-#twitter-card{
-    width: 100%;
-    display: flex;
-    justify-content: space-around;
-}
 
-.tcard{
-    width: 40%;
-    background-color: green;
-    height: 180px;
-}
+
+
 
 #right-col{
     width: 30%;
@@ -338,4 +330,42 @@ main{
         margin: 0 auto;
     }    
  }
-
+ /*---------------- Twitter ----------------*/
+#twitter-card{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+#tlogo{
+    position: absolute;
+    top: 10px;
+    right: 0;
+}
+.tweet{
+    width: 370px;
+    border-color: #1DA1F2;
+    background-color: white;
+    height: 180px;
+    margin: 15%;
+    border-style: solid;
+    border-width: medium;
+    border-radius: 5px;
+    font-family: "Helvetica Neue";
+    padding: 12px;
+}
+.text{
+    padding: 3px;
+}
+.line{
+    display: inline;
+}
+.profile{
+    border-radius:50%; 
+}
+.two{
+    font-weight: bold;
+}
+.name{
+    padding-right: 7px;
+    padding-left: 7px;
+}

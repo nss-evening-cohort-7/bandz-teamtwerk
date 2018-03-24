@@ -1,7 +1,7 @@
 var twitter =[
-  {name:"Barack Obama", handle:"@barack_obama",tweet: "pimping aint easy it's just real",timestamp:"03:17 - 14 sep 2017", pic:"<img src='/img/rickjames.jpg' class='profile'>",likes:"<img src='/img/likes1.png' class='likes'>"},
-  {name:"Beyonce Knowles", handle:"@beyonce", tweet:"pimping aint easy it's just real",timestamp:"03:17 - 14 sep 2017", pic:"<img src='/img/beyonce.jpg' class='profile'>",likes:"<img src='/img/likes2.png' class='likes'>"},
-  {name:"Macaulay Culkin", handle:"@IncredibleCulk", tweet:"pimping aint easy it's just real",timestamp:"03:17 - 14 sep 2017", pic:"<img src='/img/macaulayculkin.jpeg' class='profile'>",likes:"<img src='/img/likes3.png' class='likes'>"}
+  {name:"Barack Obama", handle:"@barack_obama",tweet: "MAKEN is the best drummer of all time",timestamp:"08:17 - 14 oct 2017", pic:"<img src='/img/rickjames.jpg' class='profile'>",likes:"<img src='/img/likes1.png' class='likes'>"},
+  {name:"Beyonce Knowles", handle:"@beyonce", tweet:"I love AMANDA",timestamp:"11:17 - 21 sep 2017", pic:"<img src='/img/beyonce.jpg' class='profile'>",likes:"<img src='/img/likes2.png' class='likes'>"},
+  {name:"Macaulay Culkin", handle:"@IncredibleCulk", tweet:"JEFF writes loops the way he shreds",timestamp:"04:17 - 14 sep 2017", pic:"<img src='/img/macaulayculkin.jpeg' class='profile'>",likes:"<img src='/img/likes3.png' class='likes'>"}
 ];
 function printToDom(string, divID){
     var myDiv = document.getElementById(divID);
